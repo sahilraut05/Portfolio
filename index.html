@@ -4,9 +4,275 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GFG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="./assets/vedantImage.png">
+    <title>Portfolio</title>
 </head>
 <body>
-    <h1>Hello World this is my first web page.</h1>
+
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Sahil Raut</div>
+        <div class="nav-links">
+            <li><a href="#about"> About </a></li>
+            <li><a href="#experience"> Experience </a></li>
+            <li><a href="#projects"> Projects </a></li>
+            <li><a href="#contact"> Contact </a></li>
+        </div>
+    </nav>
+
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Sahil Raut</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()"> About </a></li>
+                <li><a href="#education" onclick="toggleMenu()"> Education </a></li>
+                <li><a href="#projects" onclick="toggleMenu()"> Projects </a></li>
+                <li><a href="#contact" onclick="toggleMenu()"> Contact </a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/vedantNewImage.png" alt="Sahil Raut profile-pic" class="section__pic-container">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I am</p>
+            <h1 class="title">Sahil Raut</h1>
+            <p class="section__text__p2">Engaged Student & Thoughtful Researcher!</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/vedantkokane/'">
+                <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/vedantkokane10'">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/eduicon.png" alt="Education Icon" class="icon">
+                        <h3>Undergraduate Education</h3>
+                        <p><b>Pune Institute of Computer Technology</b><br>B.E Computer Engineering, 2021-2025<br>CGPA - 8.54</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p align="center">I am a final year student at Pune Institute of Computer Technology (PICT), Pune. Throughout my four-year journey in engineering, I have explored diverse domains in technology, applying my knowledge in iOS app development, navigating complex machine learning challenges, and diving into web development. I have applied these skills to develop practical projects including a mental health analysis tool, a Spotify playlist streamer and downloader, and an AI-powered expense tracker. These experiences have equipped me with the skills to effectively address real-world engineering problems.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='#experience'">
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <p class="title">Experience</p>
+        <p class="section__text__p1">Tech Stack I've worked on</p>
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+                <!-- Languages -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/cppLogo.png" alt="C++" class="icon">
+                            <div>
+                                <h3>C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/pythonLogo.png" alt="Python" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/javaLogo.png" alt="Java" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Basic + Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/swiftLogo.png" alt="Swift" class="icon">
+                            <div>
+                                <h3>Swift</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/javascript.png" alt="JavaScript" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/html.png" alt="HTML" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/css.png" alt="CSS" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frameworks</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/flaskLogo.png" alt="Flask" class="icon">
+                            <div>
+                                <h3>Flask</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/swiftui2Logo.png" alt="SwiftUI" class="icon">
+                            <div>
+                                <h3>SwiftUI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/react.png" alt="React" class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/node.svg" alt="Node" class="icon">
+                            <div>
+                                <h3>Node</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Databases</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/sqlLogo.png" alt="SQL" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/firebaseLogo.png" alt="Firebase" class="icon">
+                            <div>
+                                <h3>Firebase</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/mongodbIcon.png" alt="MongoDB" class="icon">
+                            <div>
+                                <h3>MongoDB</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrowExperience" onclick="location.href='#projects'">
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects">
+        <p class="title">Projects</p>
+        <div class="project-details-container">
+            <div class="about-containers">
+
+                <!-- Project 1 -->
+                <div class="details-container2 color-container">
+                    <div class="article-container">
+                        <img src="./assets/psychehealth.png" alt="PsycheHealth" class="project-img">
+                        <div>
+                            <h3>PsycheHealth</h3>
+                            <p>Machine Learning, Python, Flask</p>
+                        </div>
+                    </div>
+                    <p>PsycheHealth is a mental health screening application that analyzes an individual’s mental health based on their responses to a series of questions. It incorporates machine learning algorithms to assess the likelihood of mental health conditions.</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="details-container2 color-container">
+                    <div class="article-container">
+                        <img src="./assets/spotify.png" alt="Spotify Streamer" class="project-img">
+                        <div>
+                            <h3>Spotify Streamer</h3>
+                            <p>JavaScript, HTML, CSS</p>
+                        </div>
+                    </div>
+                    <p>Spotify Streamer is a web application that allows users to search for and stream their favorite Spotify tracks. It utilizes the Spotify API to retrieve song data and includes features for creating and managing playlists.</p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="details-container2 color-container">
+                    <div class="article-container">
+                        <img src="./assets/expensetracker.png" alt="AI-Powered Expense Tracker" class="project-img">
+                        <div>
+                            <h3>AI-Powered Expense Tracker</h3>
+                            <p>Machine Learning, Swift, SwiftUI</p>
+                        </div>
+                    </div>
+                    <p>The AI-Powered Expense Tracker is an iOS application designed to help users manage their finances. It leverages machine learning to analyze spending patterns and provides insights to help users make informed financial decisions.</p>
+                </div>
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrowProjects" onclick="location.href='#contact'">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="title">Contact</p>
+        <div class="contact-container">
+            <form action="https://formspree.io/f/mwkykqae" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button class="btn btn-color-2" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
