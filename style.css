@@ -219,40 +219,45 @@ section{
 }
 
 .btn{
-    transition: all 300ms ease;
-    padding : 1rem;
+    font-weight: 600;
+  	transition: all 300ms ease;
+  	padding: 1rem;
     width:10rem;
     border-radius: 2rem;
 }
 
 .btn-color-1,
-.btn-color-2{
-    border: rgb(53, 53, 53) 0.1rem solid;
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
-.btn-color-1 :hover,
-.btn-color-2 :hover{
-    cursor: pointer;
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
 }
 
 .btn-color-1,
-.btn-color-2 :hover{
-    background: rgb(53, 53, 53);
-    color: white;
-}
-.btn-color-1:hover{
-    background: rgb(0,0,0);
-    
-}
-.btn-color-2{
-    background: none;
-}
-.btn-color-2:hover{
-    border: rgb(255,255,255) 0.1rem solid;
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
 }
 
-.btn-container{
-    gap: 1rem;
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
 }
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
 
 /* about section */
 
@@ -422,50 +427,48 @@ article.icon{
     flex-direction: column;
     height: 75vh;
 }
+.contact-form-container {
+	justify-content: center;
+    max-width: 600px;
+	width: 100%;              /* Allow it to take up the full width of the parent */
+    margin: 0 auto;           /* Center the form horizontally */
+    padding: 0 1rem;          /* Add some padding for responsiveness */
+    box-sizing: border-box;  
+}
 
-.contact-info-upper-container {
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+.button-container {
     display: flex;
-    justify-content: center;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    margin: 2rem auto;
-    padding: 0.5rem;
-    width: 500px;
-    align: center;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 1rem; /* Optional: add some space above the button */
 }
-
-.contact-info-container {
-    display: flex;
-    flex-direction: column; /* Align items in a column */
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin: 1rem;
-    text-align: center; /* Center the text */
-}
-
-.contact-info-container a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.contact-info-container img {
-    max-width: 10%;
-    height: auto;
-}
-
-
-.contact-info-container p{
-    font-size: larger;
-}
-
-.contact-icon{
-    cursor: default;
-}
-
-.email-icon{
-    height: 2.5rem;
+#form-message {
+  text-align: center; /* Center-align text inside the message container */
+  margin-top: 10px; /* Add some space above the message */
+  font-size: 16px; /* Optional: Adjust the font size */
+  font-weight: bold; /* Optional: Make the text bold */
 }
 
 /* footer */
@@ -482,6 +485,7 @@ footer p{
 
 
 /* Styles for the modal */
+/*
 #videoModal {
     display: none;
     position: fixed;
@@ -509,6 +513,7 @@ footer p{
     font-size: 20px;
    
 }
+*/
 
 
 .section__pic-container{
