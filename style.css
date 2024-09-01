@@ -367,7 +367,7 @@ article.icon{
 #projects{
     margin-top: 200px;
     position: relative;
-    height: 140vh;
+    
      /* increase this height to add more projects below */
 }
 
@@ -376,7 +376,7 @@ article.icon{
 }
 
 .project-img{
-    border-radius: 1rem;
+    border-radius: 2rem;
     width: 90%;
     height: 90%;
 }
@@ -518,32 +518,18 @@ footer p{
 
 .section__pic-container{
     background-size: cover;
-    animation: profile__animate 8s ease-in-out infinite 1s;
+    animation: profile__animate 8s ease-in-out infinite 0s;
     /* box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%); */
     justify-self: center;
 }
 
 
 @keyframes profile__animate {
-    0% {
-        border: 0 solid #444343;
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
-    5% {
-        border: 9px solid #b0b0b0;
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-    45% {
-        border: 9px solid #b0b0b0;
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-    95% {
-        border: 9px solid #b0b0b0;
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-    100% {
-        border: 0 solid #b0b0b0;
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     }
 }
 
