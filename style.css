@@ -364,59 +364,138 @@ article.icon{
 }
 
 /* Project section */
-#projects{
-    margin-top: 200px;
+#projects {
+    margin-top: 2rem; /* Adjusted from 200px to use relative sizing */
     position: relative;
-    
-     /* increase this height to add more projects below */
 }
 
-.color-container{
-    border-color: rgb(163, 163, 163);
-}
-
-.project-img{
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
-}
-
-.project-title{
-    margin: 1rem;
-    color: black;
-}
-
-.project-btn{
-    color:black;
-    border-color: rgb(163, 163, 163);
-}
-
-.project-details-container{
+.project-details-container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.project-article-container{
+.about-containers {
     display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem; /* Add some space between project containers */
 }
 
-.details-container2{
-    padding: 0.5rem;
-    flex: 1;
-    /* background: white; */
+.details-container2 {
+    flex: 0 1 calc(33.33% - 2rem);
+    margin: 0.5rem;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    text-align: center;
-    
+    overflow: hidden;
 }
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 250px; /* Fixed height to maintain consistency */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+.project-title {
+    margin: 1rem 0;
+    color: black;
+}
+
+.project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+.project-tech {
+    margin-bottom: 0.5rem; /* Adds a small space before the GitHub button */
+    color: rgb(85, 85, 85);
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+    .details-container2 {
+        flex: 0 1 calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-container2 {
+        flex: 0 1 100%;
+        max-width: 400px;
+    }
+}
+/*#projects{*/
+/*    margin-top: 200px;*/
+/*    position: relative;*/
+/*    */
+/*     !* increase this height to add more projects below *!*/
+/*}*/
+
+/*.color-container{*/
+/*    border-color: rgb(163, 163, 163);*/
+/*}*/
+
+/*.project-img{*/
+/*    border-radius: 2rem;*/
+/*    width: 90%;*/
+/*    height: 90%;*/
+/*}*/
+
+/*.project-title{*/
+/*    margin: 1rem;*/
+/*    color: black;*/
+/*}*/
+
+/*.project-btn{*/
+/*    color:black;*/
+/*    border-color: rgb(163, 163, 163);*/
+/*}*/
+
+/*.project-details-container{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-direction: row;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.project-article-container{*/
+/*    display: flex;*/
+/*    text-align: initial;*/
+/*    flex-wrap: wrap;*/
+/*    flex-direction: row;*/
+/*    gap: 2.5rem;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+/*.details-container2{*/
+/*    padding: 0.5rem;*/
+/*    flex: 1;*/
+/*    !* background: white; *!*/
+/*    border-radius: 2rem;*/
+/*    border: rgb(53, 53, 53) 0.1rem solid;*/
+/*    border-color: rgb(163, 163, 163);*/
+/*    text-align: center;*/
+/*    */
+/*}*/
 
 
 /* Contact section */
